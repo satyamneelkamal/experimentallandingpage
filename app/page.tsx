@@ -17,8 +17,14 @@
         <IntegrationsSection />
         <StatsSection />
         <PricingSection />
-        <CommunitySection />
-        <WaitList />
+        <div className="horizontal-sections">
+          <div className="horizontal-section">
+            <CommunitySection />
+          </div>
+          <div className="horizontal-section">
+            <WaitList />
+          </div>
+        </div>
         <FaqSection />
         <FooterSection />
       </>
