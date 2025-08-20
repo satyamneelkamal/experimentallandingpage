@@ -211,4 +211,21 @@
   .horizontal-section {
     @apply flex-1 max-w-lg;
   }
+  
+  /* Footer horizontal layout */
+  .footer-horizontal {
+    @apply flex flex-col md:flex-row md:items-center md:justify-between gap-6 md:gap-8;
+  }
+  
+  .footer-logo {
+    @apply md:flex-shrink-0;
+  }
+  
+  .footer-social {
+    @apply flex justify-center gap-6;
+  }
+  
+  .footer-copyright {
+    @apply text-center md:text-right md:flex-shrink-0;
+  }
 }
