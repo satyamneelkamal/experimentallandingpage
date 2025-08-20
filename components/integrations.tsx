@@ -19,7 +19,7 @@ export default function IntegrationsSection() {
                             </Button>
                         </div>
 
-                        <div className="mt-auto grid grid-cols-[auto_1fr] gap-3">
+                        <div className="grid grid-cols-[auto_1fr] gap-3">
                             <div className="bg-background flex aspect-square items-center justify-center border">
                                 <MediaWiki className="size-9" />
                             </div>
