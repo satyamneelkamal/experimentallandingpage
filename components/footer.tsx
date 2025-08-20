@@ -4,25 +4,25 @@ import Link from 'next/link'
 
 export default function FooterSection() {
     return (
-        <footer className="py-8">
-            <div className="mx-auto max-w-5xl px-6">
-                <div className="footer-horizontal">
-                    <div className="footer-logo">
+        <footer className="border-t bg-background/50 backdrop-blur-3xl transition-colors duration-150">
+            <div className="mx-auto max-w-5xl px-6 transition-all duration-300">
+                <div className="relative flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
+                    <div className="flex items-center">
                         <Link
                             href="/"
                             aria-label="go home"
-                            className="block size-fit">
+                            className="flex items-center space-x-2">
                             <Logo />
                         </Link>
                     </div>
                     
-                    <div className="footer-social">
+                    <div className="flex items-center gap-4">
                         <Link
                             href="#"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="X/Twitter"
-                            className="text-muted-foreground hover:text-primary block">
+                            className="text-muted-foreground hover:text-accent-foreground duration-150">
                             <svg
                                 className="size-6"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +39,7 @@ export default function FooterSection() {
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="LinkedIn"
-                            className="text-muted-foreground hover:text-primary block">
+                            className="text-muted-foreground hover:text-accent-foreground duration-150">
                             <svg
                                 className="size-6"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +56,7 @@ export default function FooterSection() {
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="Facebook"
-                            className="text-muted-foreground hover:text-primary block">
+                            className="text-muted-foreground hover:text-accent-foreground duration-150">
                             <svg
                                 className="size-6"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +73,7 @@ export default function FooterSection() {
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="Threads"
-                            className="text-muted-foreground hover:text-primary block">
+                            className="text-muted-foreground hover:text-accent-foreground duration-150">
                             <svg
                                 className="size-6"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +95,7 @@ export default function FooterSection() {
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="Instagram"
-                            className="text-muted-foreground hover:text-primary block">
+                            className="text-muted-foreground hover:text-accent-foreground duration-150">
                             <svg
                                 className="size-6"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -112,7 +112,7 @@ export default function FooterSection() {
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="TikTok"
-                            className="text-muted-foreground hover:text-primary block">
+                            className="text-muted-foreground hover:text-accent-foreground duration-150">
                             <svg
                                 className="size-6"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -126,7 +126,7 @@ export default function FooterSection() {
                         </Link>
                     </div>
                     
-                    <div className="footer-copyright">
+                    <div className="flex items-center">
                         <span className="text-muted-foreground text-sm">© {new Date().getFullYear()} Tailark, All rights reserved</span>
                     </div>
                 </div>
