@@ -8,10 +8,10 @@ export default function FooterSection() {
     return (
         <footer className="border-t bg-background/50 backdrop-blur-3xl transition-colors duration-150">
             <div className="mx-auto max-w-5xl px-6 transition-all duration-300">
-                <div className="py-8 border-t border-border">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+                <div className="py-6 border-t border-border">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
                         {/* Left Column - Logo & Social */}
-                        <div className="space-y-6">
+                        <div className="space-y-4">
                             <Link
                                 href="/"
                                 aria-label="go home"
@@ -162,8 +162,8 @@ export default function FooterSection() {
                     </div>
                     
                     {/* Copyright - Full Width */}
-                    <div className="pt-6 mt-6 border-t border-border text-center">
-                        <span className="text-muted-foreground text-sm">© {new Date().getFullYear()} Tailark, All rights reserved</span>
+                    <div className="pt-4 mt-4 border-t border-border text-center">
+                        <span className="text-muted-foreground text-sm">© {new Date().getFullYear()} BetThis, All rights reserved</span>
                     </div>
                 </div>
             </div>
