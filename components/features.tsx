@@ -1,5 +1,5 @@
 import { Card, CardContent } from '@/components/ui/card'
-import { Shield, Users, Zap, Activity, CheckCircle2 } from 'lucide-react'
+import { Users, Zap, Activity, CheckCircle2 } from 'lucide-react'
 
 export default function FeaturesSection() {
     return (
