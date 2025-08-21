@@ -1,4 +1,5 @@
   import HeroSection from '../components/hero-section'
+  import HowItWorks from '../components/how-it-works'
   import FeaturesSection from '../components/features'
   import IntegrationsSection from '../components/integrations'
   import StatsSection from '../components/stats'
@@ -12,6 +13,7 @@
     return (
       <>
         <HeroSection />
+        <HowItWorks />
         <FeaturesSection />
         <IntegrationsSection />
         <StatsSection />
