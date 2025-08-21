@@ -65,7 +65,7 @@ export default function HowItWorks() {
                     {steps.map((step, index) => (
                         <div key={index} className="relative group">
                             {/* Enhanced step card using CSS variables */}
-                            <div className="bg-card backdrop-blur-sm rounded-2xl border border-border p-8 shadow-lg hover:shadow-xl transition-all duration-300 group-hover:border-primary/50 group-hover:bg-card/95">
+                            <div className="bg-card backdrop-blur-sm rounded-2xl border border-border p-8 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group-hover:border-primary/50 group-hover:bg-card/95">
                                 {/* Enhanced step number badge */}
                                 <div className="flex justify-center mb-8">
                                     <div className="relative">

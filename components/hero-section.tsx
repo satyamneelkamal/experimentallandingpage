@@ -77,11 +77,11 @@ export default function HeroSection() {
                                     className="mt-12 flex items-center justify-center gap-2">
                                     <div
                                         key={1}
-                                        className="bg-foreground/10 rounded-[calc(var(--radius-xl)+0.125rem)] border p-0.5">
+                                        className="bg-foreground/10 rounded-[calc(var(--radius-xl)+0.125rem)] border p-0.5 shadow-lg hover:shadow-xl transition-shadow duration-300">
                                         <Button
                                             asChild
                                             size="lg"
-                                            className="rounded-xl px-5 text-base">
+                                            className="rounded-xl px-5 text-base bg-primary text-primary-foreground hover:bg-primary/90 active:scale-95 transition-all duration-200">
                                             <Link href="#link">
                                                 <span className="text-nowrap">Start Predicting</span>
                                             </Link>
@@ -92,9 +92,10 @@ export default function HeroSection() {
                                         asChild
                                         size="lg"
                                         variant="ghost"
-                                        className="h-10.5 rounded-xl px-5 text-base">
+                                        className="h-10.5 rounded-xl px-5 text-base border border-border hover:bg-accent/10 hover:border-primary/50 active:scale-95 transition-all duration-200">
                                         <Link href="#link">
                                             <span className="text-nowrap">View Demo</span>
+                                            <ChevronRight className="ml-1 size-4" />
                                         </Link>
                                     </Button>
                                 </AnimatedGroup>
@@ -117,7 +118,7 @@ export default function HeroSection() {
                                     aria-hidden
                                     className="bg-linear-to-b to-background absolute inset-0 z-10 from-transparent from-35%"
                                 />
-                                <div className="inset-shadow-2xs ring-background dark:inset-shadow-white/20 bg-background relative mx-auto max-w-5xl overflow-hidden rounded-2xl border p-4 shadow-lg shadow-zinc-950/15 ring-1">
+                                <div className="inset-shadow-2xs ring-background dark:inset-shadow-white/20 bg-card/50 backdrop-blur-sm relative mx-auto max-w-5xl overflow-hidden rounded-2xl border border-border/50 p-4 shadow-xl hover:shadow-2xl transition-shadow duration-500 ring-1">
                                     <Image
                                         className="bg-background aspect-15/8 relative hidden rounded-2xl dark:block"
                                         src="/mail2.webp"

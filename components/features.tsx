@@ -7,11 +7,11 @@ export default function FeaturesSection() {
             <div className="mx-auto max-w-5xl px-6">
                 <div className="relative">
                     <div className="relative z-10 grid grid-cols-6 gap-3">
-                        <Card className="relative col-span-full flex overflow-hidden lg:col-span-2">
+                        <Card className="group relative col-span-full flex overflow-hidden lg:col-span-2 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
                             <CardContent className="relative m-auto size-fit pt-6">
                                 <div className="relative flex h-24 w-56 items-center">
                                     <svg
-                                        className="text-muted absolute inset-0 size-full"
+                                        className="text-muted absolute inset-0 size-full group-hover:scale-105 transition-transform duration-300"
                                         viewBox="0 0 254 104"
                                         fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -20,14 +20,14 @@ export default function FeaturesSection() {
                                             fill="currentColor"
                                         />
                                     </svg>
-                                    <span className="mx-auto block w-fit text-5xl font-semibold">100%</span>
+                                    <span className="mx-auto block w-fit text-5xl font-semibold group-hover:text-primary transition-colors duration-300">100%</span>
                                 </div>
-                                <h2 className="mt-6 text-center text-3xl font-semibold">Social-Driven</h2>
+                                <h2 className="mt-6 text-center text-3xl font-semibold group-hover:text-primary transition-colors duration-300">Social-Driven</h2>
                             </CardContent>
                         </Card>
-                        <Card className="relative col-span-full overflow-hidden sm:col-span-3 lg:col-span-2">
+                        <Card className="group relative col-span-full overflow-hidden sm:col-span-3 lg:col-span-2 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
                             <CardContent className="pt-6">
-                                <div className="relative mx-auto flex aspect-square size-32 rounded-full border before:absolute before:-inset-2 before:rounded-full before:border dark:border-white/10 dark:before:border-white/5">
+                                <div className="relative mx-auto flex aspect-square size-32 rounded-full border before:absolute before:-inset-2 before:rounded-full before:border dark:border-white/10 dark:before:border-white/5 group-hover:scale-105 transition-transform duration-300">
                                     <svg
                                         className="m-auto h-fit w-24"
                                         viewBox="0 0 212 143"
@@ -81,16 +81,16 @@ export default function FeaturesSection() {
                                     </svg>
                                 </div>
                                 <div className="relative z-10 mt-6 space-y-2 text-center">
-                                    <h2 className="group-hover:text-secondary-950 text-lg font-medium transition dark:text-white">Built on Solana</h2>
+                                    <h2 className="group-hover:text-primary text-lg font-medium transition-colors duration-300 dark:text-white">Built on Solana</h2>
                                     <p className="text-foreground">Fast, low-cost transactions with seamless wallet integration via Ribbit Wallet and Phantom for frictionless participation.</p>
                                 </div>
                             </CardContent>
                         </Card>
-                        <Card className="relative col-span-full overflow-hidden sm:col-span-3 lg:col-span-2">
+                        <Card className="group relative col-span-full overflow-hidden sm:col-span-3 lg:col-span-2 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
                             <CardContent className="pt-6">
                                 <div className="pt-6 lg:px-6">
                                     <svg
-                                        className="dark:text-muted-foreground w-full"
+                                        className="dark:text-muted-foreground w-full group-hover:scale-105 transition-transform duration-300"
                                         viewBox="0 0 386 123"
                                         fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -173,22 +173,22 @@ export default function FeaturesSection() {
                                     </svg>
                                 </div>
                                 <div className="relative z-10 mt-14 space-y-2 text-center">
-                                    <h2 className="text-lg font-medium transition">Real-Time Scoring</h2>
+                                    <h2 className="group-hover:text-primary text-lg font-medium transition-colors duration-300">Real-Time Scoring</h2>
                                     <p className="text-foreground">Live tracking of tweet engagement with automatic smart contract deployment when Red Pill score thresholds are met.</p>
                                 </div>
                             </CardContent>
                         </Card>
-                        <Card className="card variant-outlined relative col-span-full overflow-hidden lg:col-span-3">
+                        <Card className="group card variant-outlined relative col-span-full overflow-hidden lg:col-span-3 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
                             <CardContent className="grid pt-6 sm:grid-cols-2">
                                 <div className="relative z-10 flex flex-col justify-between space-y-12 lg:space-y-6">
-                                    <div className="relative flex aspect-square size-12 rounded-full border before:absolute before:-inset-2 before:rounded-full before:border dark:border-white/10 dark:before:border-white/5">
+                                    <div className="relative flex aspect-square size-12 rounded-full border before:absolute before:-inset-2 before:rounded-full before:border dark:border-white/10 dark:before:border-white/5 group-hover:scale-110 transition-transform duration-300">
                                         <Shield
                                             className="m-auto size-5"
                                             strokeWidth={1}
                                         />
                                     </div>
                                     <div className="space-y-2">
-                                        <h2 className="group-hover:text-secondary-950 text-lg font-medium text-zinc-800 transition dark:text-white">Automated Resolution</h2>
+                                        <h2 className="group-hover:text-primary text-lg font-medium text-zinc-800 transition-colors duration-300 dark:text-white">Automated Resolution</h2>
                                         <p className="text-foreground">Oracle-based outcome resolution with instant payouts to winning participants on-chain.</p>
                                     </div>
                                 </div>
@@ -239,17 +239,17 @@ export default function FeaturesSection() {
                                 </div>
                             </CardContent>
                         </Card>
-                        <Card className="card variant-outlined relative col-span-full overflow-hidden lg:col-span-3">
+                        <Card className="group card variant-outlined relative col-span-full overflow-hidden lg:col-span-3 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
                             <CardContent className="grid h-full pt-6 sm:grid-cols-2">
                                 <div className="relative z-10 flex flex-col justify-between space-y-12 lg:space-y-6">
-                                    <div className="relative flex aspect-square size-12 rounded-full border before:absolute before:-inset-2 before:rounded-full before:border dark:border-white/10 dark:before:border-white/5">
+                                    <div className="relative flex aspect-square size-12 rounded-full border before:absolute before:-inset-2 before:rounded-full before:border dark:border-white/10 dark:before:border-white/5 group-hover:scale-110 transition-transform duration-300">
                                         <Users
                                             className="m-auto size-6"
                                             strokeWidth={1}
                                         />
                                     </div>
                                     <div className="space-y-2">
-                                        <h2 className="text-lg font-medium transition">Community Rewards</h2>
+                                        <h2 className="group-hover:text-primary text-lg font-medium transition-colors duration-300">Community Rewards</h2>
                                         <p className="text-foreground">Earn XP and protocol fees for creating viral predictions, early participation, and accurate forecasting.</p>
                                     </div>
                                 </div>

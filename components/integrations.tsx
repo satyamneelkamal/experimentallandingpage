@@ -14,19 +14,20 @@ export default function IntegrationsSection() {
                             <Button
                                 variant="outline"
                                 size="sm"
+                                className="hover:bg-primary hover:text-primary-foreground hover:border-primary active:scale-95 transition-all duration-200"
                                 asChild>
                                 <Link href="#">Explore Integrations</Link>
                             </Button>
                         </div>
 
-                        <div className="grid grid-cols-[auto_1fr] gap-3">
-                            <div className="bg-background flex aspect-square items-center justify-center border">
+                        <div className="group grid grid-cols-[auto_1fr] gap-3 p-4 rounded-lg border border-border hover:border-primary/50 hover:shadow-md transition-all duration-300">
+                            <div className="bg-accent rounded-lg flex aspect-square items-center justify-center border group-hover:scale-110 transition-transform duration-300 shadow-sm">
                                 <MediaWiki className="size-9" />
                             </div>
-                            <blockquote>
-                                <p>"BetThis transforms social media engagement into real economic activity. The integration with Ribbit Wallet makes participation seamless."</p>
-                                <div className="mt-2 flex gap-2 text-sm">
-                                    <cite>Abhinav Kumar</cite>
+                            <blockquote className="space-y-3">
+                                <p className="text-muted-foreground group-hover:text-foreground transition-colors duration-300">"BetThis transforms social media engagement into real economic activity. The integration with Ribbit Wallet makes participation seamless."</p>
+                                <div className="flex gap-2 text-sm">
+                                    <cite className="font-medium">Abhinav Kumar</cite>
                                     <p className="text-muted-foreground">Co-founder, Ribbit Wallet</p>
                                 </div>
                             </blockquote>
@@ -34,7 +35,7 @@ export default function IntegrationsSection() {
                     </div>
 
                     <div className="-mx-6 px-6 [mask-image:radial-gradient(ellipse_100%_100%_at_50%_0%,#000_70%,transparent_100%)] sm:mx-auto sm:max-w-md md:-mx-6 md:ml-auto md:mr-0">
-                        <div className="bg-background dark:bg-muted/50 rounded-2xl border p-3 shadow-lg md:pb-12">
+                        <div className="bg-background dark:bg-muted/50 rounded-2xl border p-3 shadow-lg hover:shadow-xl transition-shadow duration-300 md:pb-12">
                             <div className="grid grid-cols-2 gap-2">
                                 <Integration
                                     icon={<Gemini />}
@@ -77,11 +78,11 @@ export default function IntegrationsSection() {
 
 const Integration = ({ icon, name, description }: { icon: React.ReactNode; name: string; description: string }) => {
     return (
-        <div className="hover:bg-muted dark:hover:bg-muted/50 space-y-4 rounded-lg border p-4 transition-colors">
-            <div className="flex size-fit items-center justify-center">{icon}</div>
+        <div className="group hover:bg-muted dark:hover:bg-muted/50 space-y-4 rounded-lg border p-4 transition-all duration-300 hover:border-primary/50 hover:shadow-sm hover:-translate-y-1">
+            <div className="flex size-fit items-center justify-center group-hover:scale-110 transition-transform duration-300">{icon}</div>
             <div className="space-y-1">
-                <h3 className="text-sm font-medium">{name}</h3>
-                <p className="text-muted-foreground line-clamp-1 text-sm md:line-clamp-2">{description}</p>
+                <h3 className="text-sm font-medium group-hover:text-primary transition-colors duration-300">{name}</h3>
+                <p className="text-muted-foreground line-clamp-1 text-sm md:line-clamp-2 group-hover:text-foreground transition-colors duration-300">{description}</p>
             </div>
         </div>
     )
