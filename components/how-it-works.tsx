@@ -107,17 +107,6 @@ export default function HowItWorks() {
                     ))}
                 </div>
 
-                {/* Enhanced call to action using CSS variables */}
-                <div className="text-center mt-20">
-                    <div className="inline-flex items-center gap-3 text-lg font-medium bg-accent/20 backdrop-blur-sm rounded-full px-8 py-4 border border-accent/30 shadow-md hover:shadow-lg hover:bg-accent/30 transition-all duration-300 hover:scale-105">
-                        <div className="bg-primary rounded-full p-2">
-                            <TrendingUp className="size-5 text-primary-foreground" />
-                        </div>
-                        <span className="text-foreground font-semibold">
-                            Ready to turn your predictions into profits?
-                        </span>
-                    </div>
-                </div>
             </div>
         </section>
     )

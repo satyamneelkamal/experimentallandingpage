@@ -1,5 +1,6 @@
 import { Gemini, Replit, GooglePaLM, MagicUI, VSCodium, MediaWiki } from '@/components/logos'
 import { Button } from '@/components/ui/button'
+import { Mail, SendHorizonal } from 'lucide-react'
 import Link from 'next/link'
 
 export default function IntegrationsSection() {
@@ -11,27 +12,33 @@ export default function IntegrationsSection() {
                         <div className="space-y-6">
                             <h2 className="text-balance text-3xl font-semibold md:text-4xl lg:text-5xl">Built on the Solana Ecosystem</h2>
                             <p className="text-muted-foreground">Seamlessly integrated with leading wallets, oracles, and DeFi protocols for the best prediction market experience.</p>
-                            <Button
-                                variant="outline"
-                                size="sm"
-                                className="hover:bg-primary hover:text-primary-foreground hover:border-primary active:scale-95 transition-all duration-200"
-                                asChild>
-                                <Link href="#">Explore Integrations</Link>
-                            </Button>
+                            <form
+                                action=""
+                                className="max-w-sm">
+                                <div className="bg-background has-[input:focus]:ring-muted relative grid grid-cols-[1fr_auto] items-center rounded-[calc(var(--radius)+0.75rem)] border pr-3 shadow shadow-zinc-950/5 has-[input:focus]:ring-2 overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 hover:border-primary/50 before:absolute before:inset-0 before:rounded-[calc(var(--radius)+0.75rem)] before:p-[1px] before:bg-gradient-to-r before:from-primary/30 before:via-primary/60 before:to-primary/30 before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-300 before:-z-10">
+                                    <Mail className="text-caption pointer-events-none absolute inset-y-0 left-5 my-auto size-5" />
+
+                                    <input
+                                        placeholder="Enter your email"
+                                        className="h-14 w-full bg-transparent pl-12 focus:outline-none"
+                                        type="email"
+                                    />
+
+                                    <div className="md:pr-1.5 lg:pr-0">
+                                        <Button
+                                            aria-label="submit"
+                                            className="rounded-(--radius)">
+                                            <span className="hidden md:block">Join Beta</span>
+                                            <SendHorizonal
+                                                className="relative mx-auto size-5 md:hidden"
+                                                strokeWidth={2}
+                                            />
+                                        </Button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
 
-                        <div className="group grid grid-cols-[auto_1fr] gap-3 p-4 rounded-lg border border-border hover:border-primary/50 hover:shadow-md transition-all duration-300">
-                            <div className="bg-accent rounded-lg flex aspect-square items-center justify-center border group-hover:scale-110 transition-transform duration-300 shadow-sm">
-                                <MediaWiki className="size-9" />
-                            </div>
-                            <blockquote className="space-y-3">
-                                <p className="text-muted-foreground group-hover:text-foreground transition-colors duration-300">"BetThis transforms social media engagement into real economic activity. The integration with Ribbit Wallet makes participation seamless."</p>
-                                <div className="flex gap-2 text-sm">
-                                    <cite className="font-medium">Abhinav Kumar</cite>
-                                    <p className="text-muted-foreground">Co-founder, Ribbit Wallet</p>
-                                </div>
-                            </blockquote>
-                        </div>
                     </div>
 
                     <div className="-mx-6 px-6 [mask-image:radial-gradient(ellipse_100%_100%_at_50%_0%,#000_70%,transparent_100%)] sm:mx-auto sm:max-w-md md:-mx-6 md:ml-auto md:mr-0">

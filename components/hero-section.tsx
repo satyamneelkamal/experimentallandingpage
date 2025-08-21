@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import { ChevronRight } from 'lucide-react'
+import { ChevronRight, Mail, SendHorizonal } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import { TextEffect } from '@/components/ui/text-effect'
@@ -74,30 +74,32 @@ export default function HeroSection() {
                                         },
                                         ...transitionVariants,
                                     }}
-                                    className="mt-12 flex items-center justify-center gap-2">
-                                    <div
-                                        key={1}
-                                        className="bg-foreground/10 rounded-[calc(var(--radius-xl)+0.125rem)] border p-0.5 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                                        <Button
-                                            asChild
-                                            size="lg"
-                                            className="rounded-xl px-5 text-base bg-primary text-primary-foreground hover:bg-primary/90 active:scale-95 transition-all duration-200">
-                                            <Link href="#link">
-                                                <span className="text-nowrap">Start Predicting</span>
-                                            </Link>
-                                        </Button>
-                                    </div>
-                                    <Button
-                                        key={2}
-                                        asChild
-                                        size="lg"
-                                        variant="ghost"
-                                        className="h-10.5 rounded-xl px-5 text-base border border-border hover:bg-accent/10 hover:border-primary/50 active:scale-95 transition-all duration-200">
-                                        <Link href="#link">
-                                            <span className="text-nowrap">View Demo</span>
-                                            <ChevronRight className="ml-1 size-4" />
-                                        </Link>
-                                    </Button>
+                                    className="mt-12 flex items-center justify-center">
+                                    <form
+                                        action=""
+                                        className="max-w-sm w-full">
+                                        <div className="bg-background has-[input:focus]:ring-muted relative grid grid-cols-[1fr_auto] items-center rounded-[calc(var(--radius)+0.75rem)] border pr-3 shadow shadow-zinc-950/5 has-[input:focus]:ring-2 overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 hover:border-primary/50 before:absolute before:inset-0 before:rounded-[calc(var(--radius)+0.75rem)] before:p-[1px] before:bg-gradient-to-r before:from-primary/30 before:via-primary/60 before:to-primary/30 before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-300 before:-z-10">
+                                            <Mail className="text-caption pointer-events-none absolute inset-y-0 left-5 my-auto size-5" />
+
+                                            <input
+                                                placeholder="Enter your email"
+                                                className="h-14 w-full bg-transparent pl-12 focus:outline-none"
+                                                type="email"
+                                            />
+
+                                            <div className="md:pr-1.5 lg:pr-0">
+                                                <Button
+                                                    aria-label="submit"
+                                                    className="rounded-(--radius)">
+                                                    <span className="hidden md:block">Join Beta</span>
+                                                    <SendHorizonal
+                                                        className="relative mx-auto size-5 md:hidden"
+                                                        strokeWidth={2}
+                                                    />
+                                                </Button>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </AnimatedGroup>
                             </div>
                         </div>

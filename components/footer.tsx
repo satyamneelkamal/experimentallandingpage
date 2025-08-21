@@ -1,4 +1,6 @@
 import { Logo } from '@/components/logo'
+import { Button } from '@/components/ui/button'
+import { Mail, SendHorizonal } from 'lucide-react'
 import Link from 'next/link'
 
 
@@ -6,17 +8,18 @@ export default function FooterSection() {
     return (
         <footer className="border-t bg-background/50 backdrop-blur-3xl transition-colors duration-150">
             <div className="mx-auto max-w-5xl px-6 transition-all duration-300">
-                <div className="relative flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
-                    <div className="flex items-center">
-                        <Link
-                            href="/"
-                            aria-label="go home"
-                            className="flex items-center space-x-2">
-                            <Logo />
-                        </Link>
-                    </div>
-                    
-                    <div className="flex items-center gap-4">
+                <div className="py-8 border-t border-border">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+                        {/* Left Column - Logo & Social */}
+                        <div className="space-y-6">
+                            <Link
+                                href="/"
+                                aria-label="go home"
+                                className="flex items-center space-x-2">
+                                <Logo />
+                            </Link>
+                            
+                            <div className="grid grid-cols-3 gap-3 max-w-[150px]">
                         <Link
                             href="#"
                             target="_blank"
@@ -124,9 +127,42 @@ export default function FooterSection() {
                                     d="M16.6 5.82s.51.5 0 0A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6c0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64c0 3.33 2.76 5.7 5.69 5.7c3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48"></path>
                             </svg>
                         </Link>
+                            </div>
+                        </div>
+                        
+                        {/* Right Column - Wide Waitlist Section */}
+                        <div className="space-y-4">
+                            <h3 className="text-xl font-semibold">Join the Waitlist</h3>
+                            <form
+                                action=""
+                                className="max-w-md">
+                                <div className="bg-background has-[input:focus]:ring-muted relative grid grid-cols-[1fr_auto] items-center rounded-[calc(var(--radius)+0.75rem)] border pr-3 shadow shadow-zinc-950/5 has-[input:focus]:ring-2 overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 hover:border-primary/50 before:absolute before:inset-0 before:rounded-[calc(var(--radius)+0.75rem)] before:p-[1px] before:bg-gradient-to-r before:from-primary/30 before:via-primary/60 before:to-primary/30 before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-300 before:-z-10">
+                                    <Mail className="text-caption pointer-events-none absolute inset-y-0 left-5 my-auto size-5" />
+
+                                    <input
+                                        placeholder="Enter your email"
+                                        className="h-14 w-full bg-transparent pl-12 focus:outline-none"
+                                        type="email"
+                                    />
+
+                                    <div className="md:pr-1.5 lg:pr-0">
+                                        <Button
+                                            aria-label="submit"
+                                            className="rounded-(--radius)">
+                                            <span className="hidden md:block">Join Beta</span>
+                                            <SendHorizonal
+                                                className="relative mx-auto size-5 md:hidden"
+                                                strokeWidth={2}
+                                            />
+                                        </Button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                     
-                    <div className="flex items-center">
+                    {/* Copyright - Full Width */}
+                    <div className="pt-6 mt-6 border-t border-border text-center">
                         <span className="text-muted-foreground text-sm">© {new Date().getFullYear()} Tailark, All rights reserved</span>
                     </div>
                 </div>
