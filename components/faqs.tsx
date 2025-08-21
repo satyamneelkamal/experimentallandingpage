@@ -15,33 +15,33 @@ export default function FAQsThree() {
     const faqItems: FAQItem[] = [
         {
             id: 'item-1',
-            icon: 'clock',
-            question: 'What are your business hours?',
-            answer: 'Our customer service team is available Monday through Friday from 9:00 AM to 8:00 PM EST, and weekends from 10:00 AM to 6:00 PM EST. During holidays, hours may vary and will be posted on our website.',
+            icon: 'help-circle',
+            question: 'How do I create a prediction market?',
+            answer: 'Simply quote any tweet and tag @betthis with your prediction claim (e.g., "ETH will break $4K by August"). Our bot will reply with a YES/NO poll and start tracking engagement. When the Red Pill score reaches 100+ points, a smart contract automatically deploys on Solana.',
         },
         {
             id: 'item-2',
-            icon: 'credit-card',
-            question: 'How do subscription payments work?',
-            answer: 'Subscription payments are automatically charged to your default payment method on the same day each month or year, depending on your billing cycle. You can update your payment information and view billing history in your account dashboard.',
+            icon: 'trending-up',
+            question: 'What is the Red Pill score?',
+            answer: 'The Red Pill score measures social proof by tracking poll votes, quote tweets, impressions, and likes. Each action has different point values - poll votes are worth 1pt each, quote tweets 3pts, impressions 0.01-0.05pts. Markets trigger at 100+ points.',
         },
         {
             id: 'item-3',
-            icon: 'truck',
-            question: 'Can I expedite my shipping?',
-            answer: 'Yes, we offer several expedited shipping options at checkout. Next-day and 2-day shipping are available for most U.S. addresses if orders are placed before 2:00 PM EST. International expedited shipping options vary by destination.',
+            icon: 'wallet',
+            question: 'Which wallets are supported?',
+            answer: 'BetThis supports Ribbit Wallet and Phantom for seamless Solana transactions. You can stake USDC or SOL on prediction outcomes with low fees and fast settlement times.',
         },
         {
             id: 'item-4',
-            icon: 'globe',
-            question: 'Do you offer localized support?',
-            answer: 'We offer multilingual support in English, Spanish, French, German, and Japanese. Our support team can assist customers in these languages via email, chat, and phone during standard business hours for each respective region.',
+            icon: 'coins',
+            question: 'How do fees and payouts work?',
+            answer: 'BetThis charges a 2% protocol fee on winning payouts. Winners receive their stake plus winnings from the losing side, minus fees. Early participants and creators can earn XP rewards and potential governance tokens.',
         },
         {
             id: 'item-5',
-            icon: 'package',
-            question: 'How do I track my order?',
-            answer: 'Once your order ships, you\'ll receive a confirmation email with a tracking number. You can use this number on our website or the carrier\'s website to track your package. You can also view order status and tracking information in your account dashboard under "Order History".',
+            icon: 'shield-check',
+            question: 'How are markets resolved?',
+            answer: 'Currently, markets are resolved manually by admins with multisig security. Future versions will integrate decentralized oracles like Supra for automated, trustless resolution based on verifiable data sources.',
         },
     ]
 
@@ -53,12 +53,13 @@ export default function FAQsThree() {
                         <div className="sticky top-20">
                             <h2 className="mt-4 text-3xl font-bold">Frequently Asked Questions</h2>
                             <p className="text-muted-foreground mt-4">
-                                Can't find what you're looking for? Contact our{' '}
+                                New to prediction markets? Join our{' '}
                                 <Link
                                     href="#"
                                     className="text-primary font-medium hover:underline">
-                                    customer support team
+                                    community Discord
                                 </Link>
+                                {' '}for help and updates.
                             </p>
                         </div>
                     </div>

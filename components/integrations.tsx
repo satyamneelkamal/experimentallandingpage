@@ -9,13 +9,13 @@ export default function IntegrationsSection() {
                 <div className="mx-auto flex flex-col px-6 md:grid md:max-w-5xl md:grid-cols-2 md:gap-12">
                     <div className="order-last mt-6 flex flex-col gap-12 md:order-first">
                         <div className="space-y-6">
-                            <h2 className="text-balance text-3xl font-semibold md:text-4xl lg:text-5xl">Integrate with your favorite LLMs</h2>
-                            <p className="text-muted-foreground">Connect seamlessly with popular platforms and services to enhance your workflow.</p>
+                            <h2 className="text-balance text-3xl font-semibold md:text-4xl lg:text-5xl">Built on the Solana Ecosystem</h2>
+                            <p className="text-muted-foreground">Seamlessly integrated with leading wallets, oracles, and DeFi protocols for the best prediction market experience.</p>
                             <Button
                                 variant="outline"
                                 size="sm"
                                 asChild>
-                                <Link href="#">Get Started</Link>
+                                <Link href="#">Explore Integrations</Link>
                             </Button>
                         </div>
 
@@ -24,10 +24,10 @@ export default function IntegrationsSection() {
                                 <MediaWiki className="size-9" />
                             </div>
                             <blockquote>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                                <p>"BetThis transforms social media engagement into real economic activity. The integration with Ribbit Wallet makes participation seamless."</p>
                                 <div className="mt-2 flex gap-2 text-sm">
-                                    <cite>John Doe</cite>
-                                    <p className="text-muted-foreground">Founder, MediaWiki</p>
+                                    <cite>Abhinav Kumar</cite>
+                                    <p className="text-muted-foreground">Co-founder, Ribbit Wallet</p>
                                 </div>
                             </blockquote>
                         </div>
@@ -38,33 +38,33 @@ export default function IntegrationsSection() {
                             <div className="grid grid-cols-2 gap-2">
                                 <Integration
                                     icon={<Gemini />}
-                                    name="Gemini"
-                                    description="The AI model that powers Google's search engine."
+                                    name="Solana"
+                                    description="High-speed, low-cost blockchain powering BetThis prediction markets."
                                 />
                                 <Integration
                                     icon={<Replit />}
-                                    name="Replit"
-                                    description="The AI model that powers Google's search engine."
+                                    name="Ribbit Wallet"
+                                    description="Seamless wallet integration for frictionless prediction participation."
                                 />
                                 <Integration
                                     icon={<GooglePaLM />}
-                                    name="GooglePaLM"
-                                    description="The AI model that powers Google's search engine."
+                                    name="Twitter API"
+                                    description="Real-time monitoring of tweets and engagement for market triggers."
                                 />
                                 <Integration
                                     icon={<MagicUI />}
-                                    name="MagicUI"
-                                    description="The AI model that powers Google's search engine."
+                                    name="Supra Oracle"
+                                    description="Decentralized oracle network for automated market resolution."
                                 />
                                 <Integration
                                     icon={<VSCodium />}
-                                    name="VSCodium"
-                                    description="The AI model that powers Google's search engine."
+                                    name="Phantom"
+                                    description="Popular Solana wallet with native BetThis integration support."
                                 />
                                 <Integration
                                     icon={<MediaWiki />}
-                                    name="MediaWiki"
-                                    description="The AI model that powers Google's search engine."
+                                    name="Helius"
+                                    description="Solana RPC provider and API infrastructure for real-time data."
                                 />
                             </div>
                         </div>

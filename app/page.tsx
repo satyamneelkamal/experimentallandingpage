@@ -2,7 +2,6 @@
   import FeaturesSection from '../components/features'
   import IntegrationsSection from '../components/integrations'
   import StatsSection from '../components/stats'
-  import PricingSection from '../components/pricing'
   import CommunitySection from '../components/community'
   import WaitList from '../components/waitlist'
   import FaqSection from '../components/faqs'
@@ -16,7 +15,7 @@
         <FeaturesSection />
         <IntegrationsSection />
         <StatsSection />
-        <PricingSection />
+        
         <div className="horizontal-sections">
           <div className="horizontal-section">
             <CommunitySection />
